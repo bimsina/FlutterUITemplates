@@ -1,0 +1,26 @@
+name: Waterfall_app Flutter CI
+
+on: [push]
+
+jobs:
+  waterfall_app_build:
+
+    runs-on: ubuntu-latest
+
+    steps: 
+    - uses: actions/checkout@v1 
+    - uses: actions/setup-java@v1 
+      with: 
+        java-version: '12.x' 
+    - uses: subosito/flutter-action@v1 
+      with: 
+        channel: 'stable' # or: 'dev' or 'beta'
+    - name: waterfall_app build 
+      working-directory: ./waterfall_app
+      run: |
+        flutter pub get 
+        flutter build apk 
+    - uses: actions/upload-artifact@master 
+      with: 
+        name: waterfall_app
+        path: waterfall_app/build/app/outputs/apk/release/
