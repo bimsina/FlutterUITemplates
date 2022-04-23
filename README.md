@@ -1,3 +1,6 @@
+All the new templates are hosted [here](https://fluttertemplates.dev/)
+
+
 # Flutter UI Templates
 
 | | | |
