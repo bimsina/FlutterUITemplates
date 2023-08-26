@@ -1,5 +1,7 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+
+// import 'package:flutter_swiper/flutter_swiper.dart';
 
 import 'detailPage.dart';
 
@@ -11,8 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme:
-          ThemeData(primarySwatch: Colors.blue, accentColor: Color(0xff0DBC83)),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        // accentColor: Color(0xff0DBC83)
+      ),
       home: HomePage(),
     );
   }

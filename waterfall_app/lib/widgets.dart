@@ -6,7 +6,7 @@ import 'constants.dart';
 class RoundedButton extends StatelessWidget {
   final IconData icon;
 
-  RoundedButton({Key key, this.icon = Icons.arrow_back}) : super(key: key);
+  RoundedButton({this.icon = Icons.arrow_back}) : super();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,7 +26,7 @@ class CustomButton extends StatelessWidget {
   final Color color;
   final String text;
 
-  CustomButton({Key key, this.color, this.text}) : super(key: key);
+  CustomButton({this.color = Colors.black, this.text = ""}) : super();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -140,7 +140,7 @@ class PriceWidget extends StatelessWidget {
 class CustomOutlineButton extends StatelessWidget {
   final IconData icon;
 
-  CustomOutlineButton({Key key, this.icon}) : super(key: key);
+  CustomOutlineButton({required this.icon}) : super();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -184,7 +184,8 @@ class ParameterWidget extends StatelessWidget {
 class SingleParameterWidget extends StatelessWidget {
   final String title, subtitle;
 
-  SingleParameterWidget({Key key, this.title, this.subtitle}) : super(key: key);
+  SingleParameterWidget({required this.title, required this.subtitle})
+      : super();
   @override
   Widget build(BuildContext context) {
     return Expanded(

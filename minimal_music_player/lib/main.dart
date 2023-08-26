@@ -28,7 +28,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  double height, width;
+  double height = 0;
+  double width = 0;
   @override
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
