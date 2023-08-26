@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DetailPage extends StatefulWidget {
   final String heroTag;
 
-  DetailPage({Key key, this.heroTag}) : super(key: key);
+  DetailPage({required this.heroTag}) : super();
   @override
   _DetailPageState createState() => _DetailPageState();
 }
@@ -64,16 +64,16 @@ class _DetailPageState extends State<DetailPage> {
                   children: <Widget>[
                     Expanded(
                       flex: 1,
-                      child: FlatButton(
+                      child: TextButton(
                         child: Text('\$288'),
                         onPressed: () {},
                       ),
                     ),
                     Expanded(
                       flex: 3,
-                      child: FlatButton(
-                        padding: EdgeInsets.all(8),
-                        color: Theme.of(context).accentColor,
+                      child: TextButton(
+                        // padding: EdgeInsets.all(8),
+                        // color: Theme.of(context).accentColor,
                         child: Text('Next',
                             style: TextStyle(
                                 fontFamily: 'Sans',

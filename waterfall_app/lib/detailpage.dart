@@ -6,7 +6,7 @@ import 'widgets.dart';
 class DetailPage extends StatelessWidget {
   final int index;
 
-  DetailPage({Key key, this.index}) : super(key: key);
+  DetailPage({required this.index}) : super();
   @override
   Widget build(BuildContext context) {
     double _height = MediaQuery.of(context).size.height;

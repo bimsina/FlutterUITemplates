@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Sans',
         primarySwatch: Colors.blue,
         primaryColor: Color(0xff001D25),
-        accentColor: Color(0xff196B81),
+        // accentColor: Color(0xff196B81),
       ),
       home: Scaffold(
         body: Stack(
